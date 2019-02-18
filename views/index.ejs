@@ -1,0 +1,25 @@
+<% include header %>
+
+
+<% if(weather !== null){ %>
+    <h1>It is <%= weatherTemp %>&#8451; in <%= weatherName %>.</h1>
+  <% } %>
+
+  <% if(error !== null){ %>
+    <h1><%= error %></h1>
+  <% } %>
+
+
+
+
+<fieldset>
+    <form action="/" method="POST" class="pure-form">
+        <input type="text" name="city" placeholder="Enter a City name" required>
+        <input type="submit" class="pure-button pure-button-primary" value="Go">
+    </form>
+
+   
+</fieldset>
+
+
+<% include footer %>
